@@ -44,8 +44,16 @@
                                     <artifactId>jetty-runner</artifactId>
                                     <version>9.3.3.v20150827</version>
                                     <destFileName>jetty-runner.jar</destFileName>
-                                </artifactItem>
+                               </artifactItem>
                             </artifactItems>
+                            <archive>
+                              <manifest>
+
+                              <!-- give full qualified name of your main class-->
+                              <mainClass>works.buddy.samples.WorksWithHerokuServlet</mainClass>
+
+                              </manifest>
+                            </archive>                                 
                         </configuration>
                     </execution>
                 </executions>
